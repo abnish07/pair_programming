@@ -6,7 +6,21 @@ class Home extends React.Component {
         super(props);
         this.state = {  }
     }
+
+
+
+    handleClick = (id)=>{
+        let item = data.find(item =>item.id===id)
+
+        const {app} = this.props
+        console.log(item)
+        app.addTOCart(item)
+    }
+
+
+
     render() { 
+        console.log(this.props)
         return ( 
             <div>
                 {data.map((item)=>(
@@ -15,7 +29,7 @@ class Home extends React.Component {
                         <div style={{flex:1}}>{item.price}</div>
                         <div style={{flex:1}}><img src={item.url}/></div>
                         <div style={{flex:1}}>{item.category}</div>
-                        <button style={{margin:10}}>Add to Cart</button>
+                        <button style={{margin:10}} onClick={()=>this.handleClick(item.id)}>Add to Cart</button>
                     </div>
                 ))}
             </div>

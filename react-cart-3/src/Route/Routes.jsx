@@ -5,14 +5,16 @@ import Login from '../components/Login'
 import Cart from '../components/Cart'
 import AllProducts from '../components/AllProducts'
 
-const Routes=()=>{
+const Routes=(props)=>{
+    console.log(props)
+    const {app} = props
     return (
         <div>
             <Switch>
-            <Route path ="/" exact component={Home}/>
-            <Route path ="/login"  component={Login}/>
+            <Route path ="/" exact render={(...props)=><Home {...props} app = {app}/>}/>
+            <Route path ="/login" render={(...props)=><Login {...props} app = {app}/>}/>
             <Route path ="/allproducts"  component={AllProducts}/>
-            <Route path ="/cart"  component={Cart}/>
+            <Route path ="/cart" render={(...props)=><Cart {...props} app = {app}/>}/>
             </Switch>
         </div>
     )
