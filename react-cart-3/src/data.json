@@ -1,0 +1,50 @@
+[
+    {
+        "id":501,
+        "name": "Adidas",
+        "price": 4999,
+        "url":"https://via.placeholder.com/150",
+        "category": "shoes"
+
+    },
+    {
+        "id":502,
+        "name": "Nike light Material",
+        "price": 3999,
+        "url":"https://via.placeholder.com/150",
+        "category": "shoes"
+
+    },
+    {
+        "id":503,
+        "name": "Nike Black gray for men",
+        "price": 2999,
+        "url":"https://via.placeholder.com/150",
+        "category": "shoes"
+
+    },
+    {
+        "id":201,
+        "name": "appleSE1",
+        "price": 38999,
+        "url":"https://via.placeholder.com/150",
+        "category": "mobile"
+
+    },
+    {
+        "id":202,
+        "name": "apple",
+        "price": 68999,
+        "url":"https://via.placeholder.com/150",
+        "category": "mobile"
+
+    },
+    {
+        "id":203,
+        "name": "apple 11",
+        "price": 2999,
+        "url":"https://via.placeholder.com/150",
+        "category": "mobile"
+
+    }
+]
